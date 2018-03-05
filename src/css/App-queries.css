@@ -1,0 +1,285 @@
+@media screen and (max-width: 1300px) {
+    .widgets-row {
+        display: block;
+    }
+    .main-container {
+        margin-top: 80px;
+    }
+    .site-navigation {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 20;
+    }
+    .site-navigation ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+    }
+    .dashboard-container {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .widget,
+    .chart-days {
+        margin: 20px auto;
+    }
+     .widget-calendar{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .widgets-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+   
+    .chart-days {
+        height: 350px;
+    }
+    .project-bar li,
+    .project-bar-description li,
+    .campaign-bar-description li,.campaign-bar li{
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .btn-profile img{
+        width:50%;
+    }
+    .btn-profile i::before{
+        font-size:14px;
+    }
+    .dashboard-container {
+        height: -webkit-calc(100% - 48px);
+        height: -moz-calc(100% - 48px);
+        height: calc(100% - 48px);
+    }
+    .toolbar>li {
+        display: none;
+    }
+    .toolbar li:last-of-type {
+        display: block;
+        margin: 0;
+    }
+    .main-header {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    .main-container {
+        margin-top: 40px;
+    }
+    .main-content {
+        padding: 0;
+    }
+    .widget,
+    .chart-days {
+        width:90%;
+        margin:20px auto;
+    }
+    .site-navigation__item {
+        padding: 0;
+    }
+    .chart-sales__header-container {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .chart-sales__header,
+    .styled-select-label {
+        width: auto;
+    }
+    .styled-select-label {
+        margin: 10px auto;
+    }
+    .project-bar-description,
+    .campaign-bar-description,
+    .project-bar,.campaign-bar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .project-bar,.campaign-bar {
+        width:70%;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .project-bar-description,
+    .campaign-bar-description{
+        width: 25%;
+    }
+    .project-bar-description li,
+    .campaign-bar-description li{
+      -webkit-flex-basis: auto;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto;
+        font-size: 14px;
+    }
+    .project-bar li,.campaign-bar li{
+        width:100%;
+    }
+    .project-bar li p,.campaign-bar li p {
+        display: inline-block;
+    }
+    .project-bar li:first-child p:nth-child(2)::before {
+        content: ", ";
+    }
+    .projects .styled-select,
+    .projects .styled-select-label,
+    .chat .styled-select,
+    .chat .styled-select-label {
+        display: none;
+    }
+    .projects .main-content,.campaign-bar-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    .projects .main-content{
+        padding-top:20px;
+    }
+    .projects .project-card {
+        padding: 0 10px;
+    }
+    .menu-bar {
+        padding: 5px;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        text-align: center;
+        
+    }
+    .menu-bar__link{
+        margin:0;
+    }
+    .chat-container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: auto;
+
+    }
+    .chat-container > *{
+        height:500px;
+            margin: 20px auto;
+    width: 90%;
+        
+    }
+    .contacts__list, .conversation__list{
+        height: 416px;
+    }
+    .contact-info__img{
+        width: 150px;
+
+    }
+    .chat__contact-info{
+        padding:0;
+        margin-bottom:70px;
+    }
+    .contacts__list li{
+        padding:10px;
+    }
+    .message-block{
+            width: 95%;
+    }
+    .conversation__input {
+    font-size: 12px;
+}
+    .toolbar-card,.toolbar-card::before {
+    right: 0;
+}
+    .projects .rc-progress-line {
+        display: none;
+    }
+    .projects .track-vertical {
+        bottom: 30px;
+    }
+    .track-vertical {
+        right: 0;
+        width: 8px !important;
+        top: 0;
+        bottom: 0;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+    }
+    .DayPicker-Day,
+    .DayPicker-Weekday {
+        padding: .1rem;
+    }
+    .DayPicker-NavButton--next {
+        right: 0;
+    }
+    .DayPicker-NavButton--prev {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .project-bar,.campaign-bar {
+        width:60%;
+    }
+    .project-bar{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .project-bar-description,.campaign-bar-description  {
+        width: auto;
+    }
+    .project-bar-description li,.campaign-bar-description li {
+      -webkit-flex-basis: auto;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto;
+        font-size:14px;
+    }
+    .track-vertical{
+        opacity:0.4;
+    }
+.widget,
+    .chart-days,.chat-container > * {
+        margin:20px 10px;
+    }
+    .chart-days-big{
+        padding:0;
+        padding-right:20px;
+    }
+}
